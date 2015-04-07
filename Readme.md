@@ -1,9 +1,10 @@
 ﻿#Fluent Email Templates
+A fluent email template wrapper for System.Net.Mail with merge data capabilities.
 
 ##Quick Examples
 
-###No Merge Data
-Send an email template with no merge data.
+###Without Merge Data
+Send an email template without merge data.
 
 ```c#
 
