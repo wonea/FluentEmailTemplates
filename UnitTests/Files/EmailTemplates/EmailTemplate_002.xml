@@ -1,0 +1,8 @@
+﻿<invalidNodeName xmlns="http://visualproduct.com/emailtemplate.xsd">
+    <subjectInvalid>
+        Example email invalid root element name.
+    </subjectInvalid>
+    <htmlBody>
+        The html body.
+    </htmlBody>
+</invalidNodeName>

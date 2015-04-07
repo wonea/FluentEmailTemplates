@@ -1,0 +1,38 @@
+﻿{
+  "Bcc": [
+    {
+      "DisplayName": "Donald Duck",
+      "Address": "donald.duck@example.com"
+    },
+    {
+      "DisplayName": null,
+      "Address": "daffy.duck@example.com"
+    }
+  ],
+  "Cc": [
+    {
+      "DisplayName": "Mickey Mouse",
+      "Address": "mickey.mouse@example.com"
+    },
+    {
+      "DisplayName": null,
+      "Address": "goofy@example.com"
+    }
+  ],
+  "From": {
+    "DisplayName": "Mailer",
+    "Address": "mailer@example.com"
+  },
+  "HtmlBody": "{\r\n  \"Subject\": \"My load subject\"\r\n}",
+  "Subject": "The final subject",
+  "To": [
+    {
+      "DisplayName": "Donald Duck",
+      "Address": "donald.duck@example.com"
+    },
+    {
+      "DisplayName": "Peter Griffin",
+      "Address": "peter.griffin@example.com"
+    }
+  ]
+}

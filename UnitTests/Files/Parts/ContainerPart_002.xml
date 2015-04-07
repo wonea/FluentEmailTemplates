@@ -1,0 +1,5 @@
+﻿<container renderOuterDiv="true" style="width:*|Width|*;">
+    <html>
+        <div>Ignored html part mocked.</div>
+    </html>
+</container>

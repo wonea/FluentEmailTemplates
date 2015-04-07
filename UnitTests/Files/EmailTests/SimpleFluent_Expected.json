@@ -1,0 +1,16 @@
+﻿{
+  "Bcc": [],
+  "Cc": [],
+  "From": {
+    "DisplayName": "Mailer",
+    "Address": "mailer@example.com"
+  },
+  "HtmlBody": "<html><body>Happy New Year!</body></html>",
+  "Subject": "Happy New Year from FluentEmailTemplates",
+  "To": [
+    {
+      "DisplayName": "Donald Duck",
+      "Address": "donald.duck@example.com"
+    }
+  ]
+}

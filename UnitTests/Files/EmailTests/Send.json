@@ -1,0 +1,16 @@
+﻿{
+  "Bcc": [],
+  "Cc": [],
+  "From": {
+      "DisplayName": "Mailer",
+      "Address": "mailer@example.com"
+    },
+  "HtmlBody": "<html></html>",
+  "Subject": "My load subject",
+  "To": [
+    {
+      "DisplayName": "Daffy Duck",
+      "Address": "daffy.duck@example.com"
+    }
+  ]
+}

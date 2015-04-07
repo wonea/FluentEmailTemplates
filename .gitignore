@@ -1,0 +1,17 @@
+# ignore all binaries and artifacts.
+*.dll
+*.exe
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+[Aa]rtifacts/
+
+# no user-specific solution files
+*.user
+*.suo
+
+# Ignore .ssh folder if developer has one in repo.
+.ssh/
+
+# Ignore the sln.ide folder.
+*.sln.ide

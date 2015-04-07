@@ -1,0 +1,5 @@
+﻿<container renderOuterDiv="true">
+    <html>
+        <div>Hi *|FirstName|*!</div>
+    </html>
+</container>

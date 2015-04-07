@@ -1,0 +1,12 @@
+﻿<emailTemplate xmlns="http://visualproduct.com/emailtemplate.xsd">
+    <!-- Subject template for the email. -->
+    <subject>
+        <!-- The subject part. -->
+        <value>Valid email xml.</value>
+    </subject>
+    
+    <!-- Html body template for the email. -->
+    <htmlBody>
+        The html body.
+    </htmlBody>
+</emailTemplate>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<emailTemplate>
+    <subject>
+        Missing xmlns="http://visualproduct.com/emailtemplate.xsd" in emailTemplate element.
+    </subject>
+    <htmlBody>
+        The html body.
+    </htmlBody>
+</emailTemplate>

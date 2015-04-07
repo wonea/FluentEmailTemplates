@@ -1,0 +1,8 @@
+﻿<emailTemplate>
+    <subject>
+        <value>Example email template 006</value>
+    </subject>
+    <htmlBody>
+        The html body.
+    </htmlBody>
+</emailTemplate>

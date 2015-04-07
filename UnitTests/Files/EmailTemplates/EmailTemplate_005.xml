@@ -1,0 +1,8 @@
+﻿<emailTemplate xmlns="http://visualproduct.com/emailtemplate.xsd">
+    <subjectInvalid>
+        Example email invalid email template schema.
+    </subjectInvalid>
+    <htmlBody>
+        The html body.
+    </htmlBody>
+</emailTemplate>

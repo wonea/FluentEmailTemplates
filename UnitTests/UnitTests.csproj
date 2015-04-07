@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A35AD54-2013-45E5-995C-E7ED755EA59D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualProduct.FluentEmailTemplates.UnitTests</RootNamespace>
+    <AssemblyName>VisualProduct.FluentEmailTemplates.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation">
+      <HintPath>..\packages\FluentValidation.5.5.0.0\lib\Net40\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IntegrationTests\EmailTests.cs" />
+    <Compile Include="MockUnitTests\EmailTemplateTests.cs" />
+    <Compile Include="MockUnitTests\ExampleTemplateTests.cs" />
+    <Compile Include="MockUnitTests\EmailTests.cs" />
+    <Content Include="Files\EmailTemplates\EmailTemplate_001.xml" />
+    <Content Include="Files\EmailTemplates\EmailTemplate_003.xml" />
+    <Content Include="Files\EmailTemplates\EmailTemplate_005.xml" />
+    <Content Include="Files\EmailTemplates\EmailTemplate_004.xml" />
+    <Content Include="Files\EmailTemplates\EmailTemplate_002.xml" />
+    <Content Include="Files\EmailTemplates\EmailTemplate_006.xml" />
+    <Content Include="Files\Parts\HtmlFilePart_001_Expected.html" />
+    <Content Include="Files\Parts\HtmlFilePart_002_Expected.html" />
+    <Content Include="Files\Parts\HtmlPart_001_Expected.html" />
+    <Content Include="Files\Parts\HtmlPart_006_Expected.html" />
+    <Content Include="Files\Parts\HtmlPart_005_Expected.html" />
+    <Content Include="Files\Parts\HtmlPart_004_Expected.html" />
+    <Content Include="Files\Parts\HtmlPart_003_Expected.html" />
+    <Content Include="Files\Parts\ContainerPart_005.xml" />
+    <Content Include="Files\Parts\ContainerPart_004.xml" />
+    <Content Include="Files\Parts\ContainerPart_003.xml" />
+    <Content Include="Files\Parts\ContainerPart_002.xml" />
+    <Content Include="Files\Parts\HtmlFilePart_002.html" />
+    <Content Include="Files\Parts\HtmlPartBase_002.xml" />
+    <Content Include="Files\Parts\HtmlPartBase_001.xml" />
+    <Content Include="Files\Parts\ContainerPart_001.xml" />
+    <Content Include="Files\Parts\HtmlFilePart_001.html" />
+    <Content Include="Files\Parts\HtmlPart_006.xml" />
+    <Content Include="Files\Parts\HtmlPart_005.xml" />
+    <Content Include="Files\Parts\HtmlPart_004.xml" />
+    <Content Include="Files\Parts\HtmlPart_003.xml" />
+    <Content Include="Files\Parts\HtmlPart_002.xml" />
+    <Content Include="Files\Parts\HtmlPart_001.xml" />
+    <Content Include="Files\Parts\TemplateFilePart_001.html" />
+    <None Include="App.config" />
+    <Content Include="Files\EmailTemplates\Example_001_Expected.html" />
+    <None Include="Files\EmailTemplates\Readme.md" />
+    <None Include="Files\EmailTests\SimpleFluent_Expected.json" />
+    <None Include="Files\EmailTests\AllFluent_Expected.json" />
+    <None Include="Files\EmailTests\Readme.md" />
+    <None Include="Files\EmailTests\Send.json" />
+    <None Include="Files\EmailTests\Load.json" />
+    <Content Include="Files\EmailContent\StandardEmailFooter.html" />
+    <None Include="Files\EmailContent\Readme.md" />
+    <Content Include="Files\EmailContent\StandardEmailHeader.html" />
+    <Content Include="Files\EmailTemplates\Example_001.xml" />
+    <Content Include="Files\EmailTemplates\OrderConfirmationEmail.xml" />
+    <Content Include="Files\EmailTests\WithHtmlBodyFromFile.html" />
+    <Compile Include="MockUnitTests\MergeDataTests.cs" />
+    <Compile Include="MockUnitTests\Parts\FilePartBaseTests.cs" />
+    <Compile Include="MockUnitTests\Parts\SpanPartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\ImagePartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\PartSelectorTests.cs" />
+    <Compile Include="MockUnitTests\Parts\StringPartBaseTests.cs" />
+    <Compile Include="MockUnitTests\Parts\TemplateFilePartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\HtmlPartBaseTests.cs" />
+    <Compile Include="MockUnitTests\Parts\ContainerPartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\HtmlFilePartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\HtmlPartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\ValuePartTests.cs" />
+    <Compile Include="MockUnitTests\Parts\MergePartTests.cs" />
+    <Compile Include="MockUnitTests\Validators\MailAddressValidatorTests.cs" />
+    <Compile Include="MockUnitTests\Validators\EmailMessageValidatorTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBase.cs" />
+    <None Include="IntegrationTests\Readme.md" />
+    <None Include="MockUnitTests\Readme.md" />
+    <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FluentEmailTemplates\FluentEmailTemplates.csproj">
+      <Project>{F68A431F-4047-410B-9817-3C1B496832BF}</Project>
+      <Name>FluentEmailTemplates</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
