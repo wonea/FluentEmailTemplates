@@ -9,7 +9,7 @@ Send an email template without merge data.
 ```c#
 
     var email = new Email()
-        .From("donald@example.com, "Donald Duck")
+        .From("donald@example.com", "Donald Duck")
         .To("goofy@example.com", "Goofy Dawg")
         .WithSubject("Loving FluentEmailTemplates")
         .WithHtmlBody("<html><body>OMG, FluentEmailTemplates is perfect!</body></html>")
@@ -32,7 +32,7 @@ Send an email template with merge data.
         .Add("Country", "New Zealand");
 
     var email = new Email()
-        .From("donald@example.com, "Donald Duck")
+        .From("donald@example.com", "Donald Duck")
         .To("goofy@example.com", "Goofy Dawg")
         .WithEmailTemplateFromFile(@"C:\My_Template.xml")
         .WithMergeData(mergeData)
