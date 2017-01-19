@@ -1,5 +1,4 @@
 ﻿using System.Web;
-using System.Xml;
 
 namespace VisualProduct.FluentEmailTemplates.Parts
 {

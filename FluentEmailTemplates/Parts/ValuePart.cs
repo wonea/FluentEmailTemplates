@@ -13,7 +13,7 @@ namespace VisualProduct.FluentEmailTemplates.Parts
 
         public override string GetString(MergeData mergeData)
         {
-            var value = Merge(_value, mergeData, false);
+            var value = Merge(_value, mergeData);
             return value;
         }
 

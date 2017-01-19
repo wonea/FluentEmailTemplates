@@ -8,7 +8,7 @@ namespace VisualProduct.FluentEmailTemplates.Parts
         /// <summary>
         /// Containers are not renderOuterDived by default.
         /// To renderOuterDiv a container use the attribute renderOuterDiv="true"
-        /// e.g. <conti </summary>
+        /// </summary>
         private readonly IPartSelector _partSelector;
         private readonly IList<IHtmlPart> _parts = new List<IHtmlPart>();
 

@@ -100,7 +100,7 @@ namespace VisualProduct.FluentEmailTemplates
             // Get the html part for the body as a non renderOuterDived container.
             HtmlBody = _partSelector.GetHtmlPart("container");
 
-            var xml = @"<container renderOuterDiv=""false"">" + htmlBodyNav.InnerXml + "</container>";
+            var xml = @"<container renderOuterDiv=""false"">" + htmlBodyNav?.InnerXml + "</container>";
 
             // Load the string part.
             HtmlBody.LoadXml(xml);
@@ -115,10 +115,10 @@ namespace VisualProduct.FluentEmailTemplates
             var subjectNav = nav.SelectSingleNode("/et:emailTemplate/et:subject/*[1]", manager);
 
             // Get the string part for the subject. e.g. "value".
-            Subject = _partSelector.GetStringPart(subjectNav.Name);
+            Subject = _partSelector.GetStringPart(subjectNav?.Name);
 
             // Load the string part.
-            Subject.LoadXml(subjectNav.OuterXml);
+            Subject.LoadXml(subjectNav?.OuterXml);
         }
 
         private static XmlSchemaSet GetXmlSchemaSet()
